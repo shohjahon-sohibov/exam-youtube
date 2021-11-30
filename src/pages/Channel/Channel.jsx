@@ -60,31 +60,31 @@ const Channel = () => {
             <nav className="nav-wrapper__nav">
               <ul className="nav-wrapper__list">
 
-                <li key='5' className="nav-wrapper__item">
+                <li className="nav-wrapper__item">
                   <Link className="nav-wrapper__link" to='*'>Home</Link>
                 </li>
 
-                <li key='6' className="nav-wrapper__item">
+                <li className="nav-wrapper__item">
                   <Link className="nav-wrapper__link" to='*'>Videos</Link>
                 </li>
 
-                <li key='7' className="nav-wrapper__item">
+                <li className="nav-wrapper__item">
                   <Link className="nav-wrapper__link" to='*'>Playlists</Link>
                 </li>
 
-                <li key='8' className="nav-wrapper__item">
+                <li className="nav-wrapper__item">
                   <Link className="nav-wrapper__link" to='*'>Channels</Link>
                 </li>
 
-                <li key='9' className="nav-wrapper__item">
+                <li className="nav-wrapper__item">
                   <Link className="nav-wrapper__link" to='*'>Discussion</Link>
                 </li>
 
-                <li key='10' className="nav-wrapper__item">
+                <li className="nav-wrapper__item">
                   <Link className="nav-wrapper__link" to='*'>About</Link>
                 </li>
 
-                <li key='11' className="nav-wrapper__search-item">
+                <li className="nav-wrapper__search-item">
                     <img className='nav-wrapper__img' src={search} alt="" width='18' height='18' />
                 </li>
 
@@ -98,8 +98,8 @@ const Channel = () => {
           <div className="main__top main-top">
             {users4.length > 0 && <ul className="main-top__list">
              {users4.map((user) => (
-               <Link className="main-top__link" to='/playvideo'>
-                <li key={user.id} className="main-top__item">
+               <Link key={user.title} className="main-top__link" to='/playvideo'>
+                <li  className="main-top__item">
                   <img className='main-top__img' src={ user.thumbnailUrl } alt="video" />
                   <div>
                     <h3 className='main-top__title'>{ user.title }</h3>
@@ -114,25 +114,25 @@ const Channel = () => {
             </ul>}
 
             <ul className="main-top__user-list">
-              <li key='1' className="main-top__user-title-item">
+              <li className="main-top__user-title-item">
                 <h3 className="main-top__user-title">Recommended channel</h3>
               </li>
 
-              <li key='2' className="main-top__user-item">
+              <li className="main-top__user-item">
                 <Link className="main-top__user-link" to='/channel'>
                   <img className="main-top__user-img" src={avatar} alt="avatar" width='50' height='50' />
                     <h4 className="main-top__user-name">Flora Benson</h4>
                 </Link>
               </li>
 
-              <li key='3' className="main-top__user-item">
+              <li className="main-top__user-item">
                 <Link className="main-top__user-link" to='/channel'>
                   <img className="main-top__user-img" src={avatar} alt="avatar" width='50' height='50' />
                     <h4 className="main-top__user-name">Flora Benson</h4>
                 </Link>
               </li>
 
-              <li key='4' className="main-top__user-item">
+              <li className="main-top__user-item">
                 <Link className="main-top__user-link" to='/channel'>
                   <img className="main-top__user-img" src={avatar} alt="avatar" width='50' height='50' />
                     <h4 className="main-top__user-name">Flora Benson</h4>
@@ -147,7 +147,7 @@ const Channel = () => {
 
           {users5.length > 0 && <ul className="slider__list">
             {users5.map((user) => (
-              <li key={user.id} className="slider__item">
+              <li key={user.title} className="slider__item">
               <Link className='slider__link' to='/playvideo'>
                 <img className='slider__img' src={ user.thumbnailUrl } alt="video" />
                 <h3 className='slider__video-title'>{ user.title }</h3>
