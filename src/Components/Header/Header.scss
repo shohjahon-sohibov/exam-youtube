@@ -1,0 +1,75 @@
+.main-header {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-left: 32px;
+  
+  &__hamburger {
+    margin-right: 28px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  
+  &__logo-wrapper-link {
+    display: block;
+    margin-right: 59px;
+  }
+  
+  &__logo {
+    display: inline-block;
+  }
+  
+  &__search-input {
+    background: #EBEBEB;
+    mix-blend-mode: normal;
+    opacity: 0.3;
+    border: none;
+    border-radius: 22px;
+    outline: none;
+    margin-right: 30px;
+    padding-top: 12px;
+    // padding-right: 635px;
+    padding-bottom: 12px;
+    padding-left: 23px;
+    flex-grow: 1;
+    background-image: url(../../assets/img/search.png);
+    background-repeat: no-repeat;
+    background-position: calc(98% );
+  }
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 260px;
+  margin-right: 70px;
+  margin-left: 70px;
+
+  &__icon {
+
+    &:hover {
+      opacity: .5;
+      transition: .5s ease;
+      cursor: pointer;
+    }
+  }
+
+  &__notification {
+    
+    &:hover {
+      cursor: pointer;
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      background-image: url(../../assets/img/three.png);
+      width: 8px;
+      height: 15px;
+
+    }
+  }
+}

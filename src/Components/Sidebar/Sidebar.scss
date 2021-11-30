@@ -1,0 +1,90 @@
+@import '../../assets/scss/colors.scss';
+
+.sidebar {
+  padding-top: 59px;
+  padding-right: 60px;
+  padding-bottom: 40px;
+  padding-left: 30px;
+  
+  &__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.list {
+  
+  &__title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    color: #000000;
+  }
+  
+  &__item {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 60px;
+  }
+  
+  &__item:last-child {
+    margin-top: 60px;
+  }
+  
+  &__inside-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+
+.inside-list {
+  
+  &__item {
+    margin-bottom: 28px;
+    display: flex;
+    align-items: center;
+    min-width: 165px;
+    
+      &:hover .inside-list__link {
+        color: red;
+        transform: rotate(5deg);
+        transition: .2s ease;
+      }
+
+      &:active .inside-list__link {
+        color: red;
+        transform: rotate(360deg);
+        transition: .2s ease;
+      }
+    }
+   
+    &__item:last-child {
+      margin-bottom: 0;
+    } 
+    
+    .last-item {
+      transform: translateY(50px);
+    }
+    
+    &__img {
+      margin-right: 13px;
+    }
+
+    .current {
+      color: red;
+    }
+    
+    &__link {
+      width: 100%;
+      text-decoration: none;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+      color: $main-dark-white;
+      mix-blend-mode: normal;
+      opacity: 0.5;
+    }
+  }
