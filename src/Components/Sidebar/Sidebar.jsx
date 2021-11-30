@@ -47,81 +47,81 @@ const Sidebar = () => {
       <li className='list__item'>
         <ul className='list__inside-list inside-list'>
 
-        <li key='1' className='inside-list__item'>
+        <li className='inside-list__item'>
             <img className='inside-list__img' src={library} alt="home" width='20' height='19' />
             <Link className='inside-list__link' to='*'>Library</Link>
           </li>
 
-          <li key='2' className='inside-list__item'>
+          <li className='inside-list__item'>
             <img className='inside-list__img' src={history} alt="home" width='20' height='19' />
             <Link className='inside-list__link' to='*'>History</Link>
           </li>
 
-          <li key='3' className='inside-list__item'>
+          <li className='inside-list__item'>
             <img className='inside-list__img' src={watchLater} alt="home" width='20' height='19' />
             <Link className='inside-list__link' to='*'>Watch later</Link>
           </li>
 
-          <li key='4' className='inside-list__item'>
+          <li className='inside-list__item'>
             <img className='inside-list__img' src={favourites} alt="home" width='20' height='19' />
             <Link className='inside-list__link' to='*'>Favourites</Link>
           </li>
 
-          <li key='5' className='inside-list__item'>
+          <li className='inside-list__item'>
             <img className='inside-list__img' src={likedVideos} alt="home" width='20' height='19' />
             <Link className='inside-list__link' to='*'>videos</Link>
           </li>
 
-          <li key='6' className='inside-list__item'>
+          <li className='inside-list__item'>
             <img className='inside-list__img' src={music} alt="home" width='20' height='19' />
             <Link className='inside-list__link' to='*'>Music</Link>
           </li>
 
-          <li key='7' className='inside-list__item'>
+          <li className='inside-list__item'>
             <img className='inside-list__img' src={games} alt="home" width='20' height='19' />
             <Link className='inside-list__link' to='*'>Games</Link>
           </li>
 
-          <li key='8' className='inside-list__item'>
+          <li className='inside-list__item'>
             <img className='inside-list__img' src={dropDown} alt="home" width='20' height='19' />
             <Link className='inside-list__link' to='*'>Show more</Link>
           </li>
 
-          <li key='9' className='list__item'>
+          <li className='list__item'>
             <h2 className='list__title'>Subscriptions</h2>
             <ul className='list__inside-list inside-list'>
 
-              <li key='10' className='inside-list__item'>
-              key='1'   <img className='inside-list__img' src={avatar} alt="home" width='20' height='19' />
-                <Link className='inside-list__link' to='/channel'>Gussie Singleton</Link>
-              </li>
-              
-              <li key='11' className='inside-list__item'>
-                <img className='inside-list__img' src={avatar} alt="home" width='20' height='19' />
-                <Link className='inside-list__link' to='/channel'>Gussie Singleton</Link>
-              </li>
-
-              <li key='12' className='inside-list__item'>
+              <li className='inside-list__item'>
                 <img className='inside-list__img' src={avatar} alt="home" width='20' height='19' />
                 <Link className='inside-list__link' to='/channel'>Gussie Singleton</Link>
               </li>
               
-              <li key='13' className='inside-list__item'>
+              <li className='inside-list__item'>
+                <img className='inside-list__img' src={avatar} alt="home" width='20' height='19' />
+                <Link className='inside-list__link' to='/channel'>Gussie Singleton</Link>
+              </li>
+
+              <li className='inside-list__item'>
                 <img className='inside-list__img' src={avatar} alt="home" width='20' height='19' />
                 <Link className='inside-list__link' to='/channel'>Gussie Singleton</Link>
               </li>
               
-              <li key='14' className='inside-list__item'>
+              <li className='inside-list__item'>
+                <img className='inside-list__img' src={avatar} alt="home" width='20' height='19' />
+                <Link className='inside-list__link' to='/channel'>Gussie Singleton</Link>
+              </li>
+              
+              <li className='inside-list__item'>
                 <img className='inside-list__img' src={avatar} alt="home" width='20' height='19' />
                 <Link className='inside-list__link' to='/channel'>Gussie Singleton</Link>
               </li>
 
-              <li key='15' className='inside-list__item'>
+              <li className='inside-list__item'>
                 <img className='inside-list__img' src={avatar} alt="home" width='20' height='19' />
                 <Link className='inside-list__link' to='/channel'>Gussie Singleton</Link>
               </li>
 
-              <li key='16' className='inside-list__item last-item'>
+              <li className='inside-list__item last-item'>
                 <img className='inside-list__img' src={avatar} alt="home" width='20' height='19' />
                 <Link className='inside-list__link' to='*'>Setting</Link>
               </li>

@@ -54,7 +54,7 @@ const HomeContent = () => {
           {users.length > 0 && 
           <ul className='main__list'>
             {users.map((user) => (
-            <li className='main__item'>
+            <li key={user.title} className='main__item'>
               <Link className='main__link' to='/channel'>
                 <img className='main__img' src={ user.thumbnailUrl } alt="video" />
                 <h3 className='main__title'>{ user.title }</h3>
@@ -93,7 +93,7 @@ const HomeContent = () => {
     <main className='home-content__main main'>
       {users2.length > 0 && <ul className='main__list'>
         {users2.map((user) => (
-          <li className='main__item second-line-item'>
+          <li key={user.title} className='main__item second-line-item'>
           <Link className='main__link second-line-link' to='/'>
             <img className='main__img second-line-img' src={ user.thumbnailUrl } alt="video" />
             <h3 className='main__title'>{ user.title }</h3>
@@ -135,7 +135,7 @@ const HomeContent = () => {
     <main className='home-content__main main'>
       {users3.length > 0 && <ul className='main__list'>
         {users3.map((user3) => (
-          <li className='main__item'>
+          <li key={user3.title} className='main__item'>
           <Link className='main__link' to='/'>
             <img className='main__img' src={ user3.thumbnailUrl } alt="video" />
             <h3 className='main__title'>{ user3.title }</h3>
