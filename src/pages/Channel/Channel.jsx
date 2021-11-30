@@ -11,7 +11,6 @@ import avatar from '../../assets/img/girl-avatar.png';
 import search from '../../assets/img/search.png'
 
 const Channel = () => {
-  const index = [500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519]
 
   const [users4, sertUser4] = useState([]);
   const [users5, sertUser5] = useState([]);
